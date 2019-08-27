@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+#train-time-table th, td {
+    display: inline-block;
+    width: 16.575%;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-646164.jpg");
+    height: 100%;
+
+    background-size: cover;
+}
+
+.container {
+    font-size: 18px;
+}
+
+#train-time-table {
+    align-content: center;
+}
+
+.card-header {
+    font-size: 24px;
+}
+
+.jumbotron {
+    font-family: 'Abril Fatface';
+}
+
+.opaque {
+    background: rgba(21, 9, 21, 0.9);
+}
+
+.center {
+    text-align: center;
+}

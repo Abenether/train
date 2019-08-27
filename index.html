@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    ​
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Train Scheduler</title>
+    ​
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> ​
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    ​
+    <!-- Moment.js Reference -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    ​
+
+</head>
+​
+
+<body>
+    <h1>Train Scheduler</h1>
+    ​
+    <!-- Employee Tracker -->
+    <div class="container">
+        ​
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid bg-transparent" style=" color: darkred">
+            <h1 class="text-center">Choose Your Train!</h1>
+            <h3 class="text-center">Train Scheduler App</h3>
+            <h6>Welcome  Train Scheduler!</h6>
+        </div>
+        ​
+        <div class="row-md-12">
+
+            <div class="col-md-12 text-center"> ​
+                <!-- Current Train Schedules-->
+                <div class="card text-white opaque border-warning mb-4">
+                    <div class="card-header bg-transparent text-white border-warning mb-3">Current Train Schedules</div>
+                    <div class="card-body">
+                        <table class="table table-sm table-hover text-center" id='train-time-table'>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Names</th>
+                                    <th scope="col">Destinations</th>
+                                    <th scope="col">Frequency</th>
+                                    <th scope="col">Minutes Away</th>
+                                    <th scope="col">Arrival Time</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Add Train -->
+        <div class="col-md-12 text-center">
+            <div class="card text-white opaque border-warning mb-4">
+                <div class="card-header text-white bg-transparent border-warning mb-3">
+                    Add Train here
+                </div>
+                <div class="card-body">
+                    <!-- Entry Form -->
+                    <form>
+                        <div class="form-group row">
+                            <label for="train-name">Train Names</label>
+                            <input class="form-control" id="train-name" placeholder="Blue Line" type="text">
+                        </div>
+                        <div class="form-group row">
+                            <label for="destination-input">Destinations</label>
+                            <input class="form-control" id="destination-input" placeholder="Destination" type="text">
+                        </div>
+                        <div class="form-group row">
+                            <label for="star-time-input">Train Start Time (HH:mm - Military Time)</label>
+                            <input class="form-control" id="start-input" placeholder="00:00AM/PM" type="HH:MM">
+                            <hh:mm></hh:mm>
+                        </div>
+                        <div class="form-group row">
+                            <label for="frequency-input">Frequency (min)</label>
+                            <input class="form-control" id="frequency-input" placeholder="10min" type="text">
+                        </div>
+                        <button class="btn btn-info float-left" id="add-train-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    ​
+    <div class="row">
+        ​
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="assets/javascript/app.js"></script>
+    ​
+</body>
+​
+
+</html>
