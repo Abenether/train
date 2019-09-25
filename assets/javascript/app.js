@@ -1,16 +1,18 @@
-// Initialize Firebase
-var config = {
-    apiKey: "AIzaSyC97u_SJy_E6_vpJ9PuuB6KLzMv9TEKfmE",
-    authDomain: "ke-train-scheduler.firebaseapp.com",
-    databaseURL: "https://ke-train-scheduler.firebaseio.com",
-    projectId: "ke-train-scheduler",
-    storageBucket: "ke-train-scheduler.appspot.com",
-    messagingSenderId: "581787075295"
-};
-firebase.initializeApp(config);
 
-
-var database = firebase.database();
+  var Config = {
+    apiKey: "AIzaSyBRC--5E7H25z7sk3a6mf8Y2FfEAgwJOlk",
+    authDomain: "abenether-train.firebaseapp.com",
+    databaseURL: "https://abenether-train.firebaseio.com",
+    projectId: "abenether-train",
+    storageBucket: "",
+    messagingSenderId: "1094139491499",
+    appId: "1:1094139491499:web:073ef0a7796a845aeef3ee",
+    measurementId: "G-5EGPC74LDD"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(Config);
+ 
+  var database = firebase.database();
 
 // Capture user input into variable to be used by js
 $("button").on("click", function (event) {
